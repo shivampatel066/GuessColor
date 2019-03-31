@@ -54,11 +54,16 @@ class ViewController: UIViewController {
         seven.isHidden = true
         eight.isHidden = true
         nine.isHidden = true
+        
+        rgbLabel.text = "Select Difficulty Level to Start"
+        rgbLabel.font = rgbLabel.font.withSize(20)
     }
 
 
     
     @IBAction func beginner(_ sender: Any) {
+        
+        rgbLabel.font = rgbLabel.font.withSize(40)
         applyRoundCorners()                         //Apply round corner to all buttons.
         one.isHidden = false                        //Displaying only 3 colour buttons for Beginners Difficulty.
         two.isHidden = false
@@ -69,7 +74,7 @@ class ViewController: UIViewController {
         seven.isHidden = true
         eight.isHidden = true
         nine.isHidden = true
-        youWonLabel.alpha = 0                       //Hiding Youwon Label in the Beginning will display once the user selects any colour button.
+        youWonLabel.text = ""                       //Hiding Youwon Label in the Beginning will display once the user selects any colour button.
         
         
         randomNumberLimit = 3                       //Setting Limit As per difficulty.
@@ -80,6 +85,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func intermediate(_ sender: Any) {
+        rgbLabel.font = rgbLabel.font.withSize(40)
         applyRoundCorners()
         one.isHidden = false
         two.isHidden = false
@@ -90,7 +96,7 @@ class ViewController: UIViewController {
         seven.isHidden = true
         eight.isHidden = true
         nine.isHidden = true
-        youWonLabel.alpha = 0
+        youWonLabel.text = ""
         randomNumberLimit = 6
         generateRandomColours()
         generateRandomMainColour()
@@ -101,6 +107,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func advanced(_ sender: Any) {
+        rgbLabel.font = rgbLabel.font.withSize(40)
         applyRoundCorners()
         one.isHidden = false
         two.isHidden = false
@@ -111,7 +118,7 @@ class ViewController: UIViewController {
         seven.isHidden = false
         eight.isHidden = false
         nine.isHidden = false
-        youWonLabel.alpha = 0
+        youWonLabel.text = ""
         
         randomNumberLimit = 9
         generateRandomColours()
@@ -442,10 +449,10 @@ class ViewController: UIViewController {
     //Compare Main Colour Components(redMain...) with Clicked Colour Components(redTemp...)
     func checkAndShowResult() {
         if redMain == redTemp && greenMain == greenTemp && blueMain == blueTemp {
-            youWonLabel.alpha = 1.0
+            youWonLabel.text = "You Won !!"
             
         } else {
-            youWonLabel.alpha = 0
+            youWonLabel.text = "Wrong Try Again !!"
         }
         
         
@@ -466,4 +473,3 @@ extension UIColor {
         return UIColor(red: r, green: g, blue: b, alpha: 1)
     }
 }
-
