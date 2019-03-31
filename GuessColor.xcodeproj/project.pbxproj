@@ -14,6 +14,9 @@
 		4027628A224FFE0600D11729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40276288224FFE0600D11729 /* LaunchScreen.storyboard */; };
 		40276295224FFE0600D11729 /* GuessColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40276294224FFE0600D11729 /* GuessColorTests.swift */; };
 		402762A0224FFE0600D11729 /* GuessColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4027629F224FFE0600D11729 /* GuessColorUITests.swift */; };
+		402762AE225001CC00D11729 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 402762AD225001CC00D11729 /* PORKYS_.TTF */; };
+		402762AF225001CC00D11729 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 402762AD225001CC00D11729 /* PORKYS_.TTF */; };
+		402762B0225001CC00D11729 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 402762AD225001CC00D11729 /* PORKYS_.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		4027629B224FFE0600D11729 /* GuessColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4027629F224FFE0600D11729 /* GuessColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessColorUITests.swift; sourceTree = "<group>"; };
 		402762A1224FFE0600D11729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402762AD225001CC00D11729 /* PORKYS_.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = PORKYS_.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				40276286224FFE0600D11729 /* Assets.xcassets */,
 				40276288224FFE0600D11729 /* LaunchScreen.storyboard */,
 				4027628B224FFE0600D11729 /* Info.plist */,
+				402762AD225001CC00D11729 /* PORKYS_.TTF */,
 			);
 			path = GuessColor;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			files = (
 				4027628A224FFE0600D11729 /* LaunchScreen.storyboard in Resources */,
 				40276287224FFE0600D11729 /* Assets.xcassets in Resources */,
+				402762AE225001CC00D11729 /* PORKYS_.TTF in Resources */,
 				40276285224FFE0000D11729 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402762AF225001CC00D11729 /* PORKYS_.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402762B0225001CC00D11729 /* PORKYS_.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
